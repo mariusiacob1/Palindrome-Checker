@@ -29,7 +29,7 @@ string Palindrome::toLowercase(const string& str) {
 // Function to check if the string is a palindrome
 bool Palindrome::isPalindrome(const string& str) {
     int left = 0;
-    int right = str.length() - 1;
+    int right = str.length() - 1; // Get the last index of the string
     while (left < right) {
         if (str[left] != str[right]) {
             return false;
